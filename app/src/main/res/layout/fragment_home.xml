@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?attr/materialCardViewStyle"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/Menu1_imageview"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_menu_camera" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:text="Tome una fotografia y escanee el código de placa"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle" />
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.Material3.Button.IconButton.Outlined"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:text="Escanear ahora"
+                            app:iconPadding="10dp"
+                            app:icon="@drawable/ic_menu_camera" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                style="?attr/materialCardViewElevatedStyle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/Menu2_imageview"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_menu_gallery" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:text="Seleccione fotografia de su galeria y escanee el código de placa"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle" />
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:text="Buscar ahora"
+                            app:iconPadding="10dp"
+                            app:icon="@drawable/ic_menu_gallery" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                style="?attr/materialCardViewFilledStyle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/Menu3_imageview"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/baseline_edit_24" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:text="Ingrese manualmente el código de placa"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle" />
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.Material3.Button.IconButton.Filled"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:text="Ingresar ahora"
+                            app:iconPadding="10dp"
+                            app:icon="@drawable/baseline_edit_24" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
