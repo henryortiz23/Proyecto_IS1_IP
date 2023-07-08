@@ -1,2 +1,3 @@
 # Proyecto_IS1_IP
- Proyecto Ingenieria de Software 1
+
+Desarrollo de proyecto ingenieria de software 1
